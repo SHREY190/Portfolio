@@ -5,22 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Naviation Bar -->
     <nav>
       <div class="nav-container">
-        <div class="logo">SC</div>
-        <ul class="nav-links">
-          <li><a class="nav-link">Home</a></li>
-          <li><a class="nav-link">About</a></li>
-          <li><a class="nav-link">Skills</a></li>
-          <li><a class="nav-link">Experience</a></li>
-          <li><a class="nav-link">Projects</a></li>
-          <li><a class="nav-link">Contacts</a></li>
-        </ul>
-        <button>Download CV</button>
-        <div>Flag</div>
+        <div class="nav-sec1">
+          <div class="logo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 200 200"
+              role="img"
+              aria-labelledby="title3-desc"
+              width="50"
+              height="50"
+            >
+              <title id="title3-desc">SC - Badge1</title>
+              <defs>
+                <style>
+                  :root {
+                    --ring: #303134;
+                    --inner: #303134;
+                    --cut: #fff;
+                  }
+                  .ring {
+                    fill: var(--ring);
+                  }
+                  .inner {
+                    fill: var(--inner);
+                  }
+                  .cut {
+                    fill: var(--cut);
+                    font-family: "Lexend", sans-serif;
+                    font-weight: 700;
+                    font-size: 56px;
+                  }
+                </style>
+              </defs>
+
+              <circle cx="100" cy="100" r="96" class="ring" />
+              <circle cx="100" cy="100" r="78" class="inner" />
+              <!-- negative-space letters: use same color as outer ring to make letters 'cut out' -->
+              <text
+                class="cut"
+                x="50%"
+                y="55%"
+                dominant-baseline="middle"
+                text-anchor="middle"
+                fill="var(--ring)"
+              >
+                SC
+              </text>
+            </svg>
+          </div>
+          <span class="my-name"
+            ><span class="name-sym"><i class="fa-solid fa-less-than"></i></span
+            >Shrey<span class="name-sym"
+              ><i class="fa-solid fa-greater-than"></i></span
+          ></span>
+        </div>
+        <div class="nav-sec2">
+          <ul class="nav-links">
+            <li><a class="nav-link">Home</a></li>
+            <li><a class="nav-link">About</a></li>
+            <li><a class="nav-link">Skills</a></li>
+            <li><a class="nav-link">Experience</a></li>
+            <li><a class="nav-link">Projects</a></li>
+            <li><a class="nav-link">Contacts</a></li>
+          </ul>
+          <button class="download-cv">
+            Download CV <i class="fa fa-download"></i>
+          </button>
+          <figure class="flag">
+            <img src="india.png" alt="Country Flag" />
+          </figure>
+        </div>
       </div>
     </nav>
 
@@ -28,14 +97,72 @@
       <!-- Hero Section -->
       <section class="hero-section">
         <div class="hero-container">
-          <h2>I am a Software Developer</h2>
-          <p>
-            I am a Software Developer (Frontend) working on admin webpanels and
-            authentication applications
-          </p>
-          <p>I build applications, integrate api and do some shit on vscode.</p>
-          <button>Browse projects</button>
-          <div class="hero-image">My Image</div>
+          <div class="hero-sec">
+            <div class="hero-title">
+              <h2 class="title-content">I am a <span>Software</span></h2>
+              <h2 class="title-content">Developer.</h2>
+            </div>
+            <p>
+              I am a Frontend Developer working on admin panels and
+              authentication apps, creating clean, responsive interfaces with
+              modern frameworks like React.
+            </p>
+
+            <p>
+              I build applications, integrate APIs, and optimize performance,
+              always exploring new tools to improve user experience and stay
+              up-to-date with web development trends.
+            </p>
+
+            <button>Browse projects</button>
+          </div>
+          <div class="hero-image">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 200 200"
+              role="img"
+              aria-labelledby="title3-desc"
+              width="300"
+              height="300"
+            >
+              <title id="title3-desc">SC - Badge</title>
+              <defs>
+                <style>
+                  :root {
+                    --ring: #fff;
+                    --inner: #fff;
+                    --cut: #000;
+                  }
+                  .ring {
+                    fill: var(--ring);
+                  }
+                  .inner {
+                    fill: var(--inner);
+                  }
+                  .cut {
+                    fill: var(--cut);
+                    font-family: "Helvetica Neue", Arial, sans-serif;
+                    font-weight: 800;
+                    font-size: 120px;
+                  }
+                </style>
+              </defs>
+
+              <circle cx="100" cy="100" r="96" class="ring" />
+              <circle cx="100" cy="100" r="78" class="inner" />
+              <!-- negative-space letters: use same color as outer ring to make letters 'cut out' -->
+              <text
+                class="cut"
+                x="50%"
+                y="55%"
+                dominant-baseline="middle"
+                text-anchor="middle"
+                fill="var(--ring)"
+              >
+                SC
+              </text>
+            </svg>
+          </div>
         </div>
       </section>
 

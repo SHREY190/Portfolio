@@ -30,8 +30,10 @@ nav {
   padding: 15px 20px;
   border-radius: 60px;
   border: none;
-  background-color: #4d4d50;
-  box-shadow: 0 0 10px 5px rgb(34, 33, 33);
+  background-color: #4d4d50b5;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px); /* Safari support */
+  box-shadow: 0 0 8px 5px rgb(43, 42, 42);
 }
 
 .nav-sec1 {
@@ -260,4 +262,154 @@ nav {
   margin-bottom: 30px;
   font-size: 20px;
   word-spacing: 5px;
+}
+
+/* Skills Sections */
+
+.skills-section {
+  min-height: 100vh;
+  padding: 60px 0;
+}
+
+.skill-container {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+}
+
+.skills-list ol {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0 120px;
+}
+
+.skills-list ol li {
+  list-style-type: none;
+  justify-self: center;
+  padding: 30px;
+}
+
+.skill-box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.skill-box .skill-icon {
+  text-align: center;
+  width: 225px;
+  height: 225px;
+  border: none;
+  border-radius: 10px;
+  background-color: #25262a;
+  box-shadow: 5px 5px 5px 5px #28292d;
+  padding: 35px;
+}
+
+.skill-box .skill-name {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* Experience Section */
+
+.experience-section {
+  background-color: #25262a;
+  min-height: 30vh;
+  padding: 60px 120px;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+}
+
+.title-margin {
+  margin-bottom: 30px;
+}
+
+.workex {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #2d2e32;
+  box-shadow: 5px 5px 5px 5px #222326;
+  padding: 15px 20px;
+}
+
+.workplace {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.company-name {
+  color: #32a050;
+
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.company-underline {
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
+
+.work-type {
+  max-height: 36px;
+  background-color: #15202b;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  display: inline;
+}
+
+.work-tenure {
+  font-weight: 300;
+  font-size: 18px;
+  color: #ab9a8c;
+}
+
+.tenure-range::before {
+  content: "\f2f2"; /* Unicode for Font Awesome timer icon (fa-solid fa-timer) */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-right: 10px;
+  color: #32a050;
+}
+
+.tenure-total::before {
+  content: "\f111"; /* Unicode for fa-solid fa-circle */
+  font-family: "Font Awesome 6 Free";
+  font-size: 9px;
+  font-weight: 900; /* For solid icons */
+  color: #32a050;
+  margin: 0 10px;
+  vertical-align: 2px;
+}
+
+.work-location::before {
+  content: "\f3c5";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 14px;
+  color: #32a050;
+  margin: 0 10px;
+  vertical-align: 2px;
+}
+
+.workex-expanded {
+  display: block; /* Display will be none, add with JS code.*/
+  padding: 30px 20px;
+  font-weight: 300;
+  font-size: 18px;
+  color: #ab9a8c;
+}
+
+.workex-expanded li {
+  margin: 10px;
 }

@@ -423,14 +423,64 @@
         <div class="projects-container">
           <h2 class="section-title">Projects</h2>
           <div class="project-type">
-            <span>Personal</span><span>Work/Client</span>
+            <span
+              ><i class="fa-solid fa-folder folder-icon"></i> Personal
+              Project</span
+            >
+            <span>
+              <i class="fa-solid fa-desktop"></i> Work/Client Project</span
+            >
           </div>
           <div class="projects-content">
-            <div class="project1">
-              <div class="project-demo">Image/video for project demo</div>
-              <div class="project1-details">
+            <div class="project">
+              <div class="project-demo">
+                <img src="./images/portfolio.png" />
+              </div>
+              <div class="project-details">
+                <h3>Personal Portfolio Website</h3>
+                <div class="project-label">Web Application</div>
+                <div class="project-description">
+                  <ul class="project-stack">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                  </ul>
+                  <p>
+                    Developed a responsive personal portfolio app using HTML,
+                    CSS, and JavaScript to showcase projects, skills, and
+                    achievements. Implemented smooth navigation, interactive UI
+                    elements, and performance optimization for cross-device
+                    accessibility.
+                  </p>
+                  <ul class="project-links">
+                    <li>
+                      <a
+                        href="https://github.com/SHREY190/Portfolio"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><i class="fa-brands fa-github fa-xl"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://github.com/SHREY190/Portfolio"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><i class="fa-solid fa-link fa-xl"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-demo">
+                <img src="./images/portfolio.png" />
+              </div>
+              <div class="project-details">
                 <h3>Project Name</h3>
-                <div>
+                <div class="project-label">Web Application</div>
+                <div class="project-description">
                   <ul class="project-stack">
                     <li>REACT</li>
                     <li>Javascript</li>
@@ -442,6 +492,24 @@
                     vel, fugit libero sit. Omnis assumenda recusandae corporis
                     maiores esse quam, ipsum rerum nostrum?
                   </p>
+                  <ul class="project-links">
+                    <li>
+                      <a
+                        href="https://github.com/SHREY190/Portfolio"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><i class="fa-brands fa-github fa-xl"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://github.com/SHREY190/Portfolio"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><i class="fa-solid fa-link fa-xl"></i
+                      ></a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -453,31 +521,48 @@
       <section class="contact-section">
         <div class="contact-container">
           <h2 class="section-title">Contacts</h2>
-          <div>
-            <div class="contact-methods">
-              <h2>Contact me details.</h2>
-              <ul>
-                <li>Email</li>
-                <li>LinkedIn</li>
-                <li>Phone Number</li>
-              </ul>
-            </div>
-            <div>
-              <form>
-                <h2>Get in Touch</h2>
-                <h4>Feel free to get in Touch</h4>
+          <div class="contact-methods">
+            <h2>Contact Me</h2>
+            <ul>
+              <li><i class="fa-solid fa-location-dot fa-xl"></i>Pune, India</li>
+              <li>
+                <i class="fa-solid fa-envelope fa-xl"></i
+                >chaudhary.shrey1@gmail.com
+              </li>
+              <li>
+                <i class="fa-brands fa-linkedin fa-xl"></i
+                >www.linkedin.com/in/choudhary-shrey/
+              </li>
+              <li><i class="fa-solid fa-phone fa-xl"></i>+91 8770080495</li>
+            </ul>
+          </div>
+          <div class="email-form">
+            <form>
+              <h2>Get in Touch</h2>
+              <h4>Feel free to get in Touch</h4>
+              <div class="form-inputs">
                 <input type="text" placeholder="Your Name" />
                 <input type="email" placeholder="You Email" />
-                <input type="text" placeholder="Type Your message" />
-              </form>
-            </div>
+                <textarea
+                  class="email-message"
+                  placeholder="Type Your message"
+                ></textarea>
+              </div>
+              <button class="form-submit">
+                Send<i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
           </div>
         </div>
       </section>
     </main>
     <footer>
       <div class="footer-container">
-        <div class="footer-content">Made with ❤️‍🔥 by Shrey</div>
+        <div class="footer-content">
+          Made by <i class="fa-brands fa-html5"></i>
+          <i class="fa-brands fa-css3-alt"></i>
+          <i class="fa-brands fa-square-js"></i> with ❤️‍🔥 by Shrey
+        </div>
         <h5>@2025 Shrey Choudhary. All right reserved</h5>
       </div>
     </footer>
